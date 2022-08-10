@@ -33,7 +33,7 @@ function isJavaScriptFile(fileName){
   }
 }
 
-const fileName = 'assignment4.js';
+let fileName = 'assignment4.js';
 console.log(isJavaScriptFile(fileName));
 
 
@@ -56,9 +56,9 @@ function oilPrice(diesel, petrol, octane){
   }
 }
 
-const diesel = 30;
-const petrol = 20;
-const octane = 10;
+let diesel = 30;
+let petrol = 20;
+let octane = 10;
 console.log(oilPrice(diesel, petrol, octane));
 
 
@@ -82,7 +82,7 @@ function publicBusFare(person){
 
 }
 
-const person = 365;
+let person = 365;
 console.log(publicBusFare(person));
 
 
@@ -105,6 +105,6 @@ function isBestFriend(obj1, obj2){
   }
 }
 
-const friend1 = {name: 'abul', friend: 'babul'};
-const friend2 = {name: 'babul', friend: 'abul'};
+let friend1 = {name: 'abul', friend: 'babul'};
+let friend2 = {name: 'babul', friend: 'abul'};
 console.log(isBestFriend(friend1, friend2));
