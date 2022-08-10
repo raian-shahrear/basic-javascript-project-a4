@@ -1,4 +1,6 @@
-// Problem:1  radianToDegree
+/*=======================
+Problem:1  radianToDegree 
+=======================*/
 
 function radianToDegree(radian){
   if(typeof radian === 'number'){
@@ -7,17 +9,19 @@ function radianToDegree(radian){
     return resultInDegree;
   }
   else{
-    return 'Error: Input a valid number';
+    return 'Error: Input a valid number.';
   }
   
 }
 
-let radian = 10;
+let radian = 199;
 console.log(radianToDegree(radian));
 
 
 
-// Problem:2  isJavaScriptFile
+/*=========================
+Problem:2  isJavaScriptFile 
+=========================*/
 
 function isJavaScriptFile(fileName){
   if(typeof fileName === 'string'){
@@ -25,20 +29,22 @@ function isJavaScriptFile(fileName){
     return doExist;
   }
   else{
-    return 'Error: Input a valid file name with extension';
+    return 'Error: Input must be a string type with extension.';
   }
 }
 
-const fileName = 'assignment.js';
+const fileName = 'assignment4.js';
 console.log(isJavaScriptFile(fileName));
 
 
 
-// Problem 3: oilPrice
+/*=================
+Problem 3: oilPrice 
+=================*/
 
 function oilPrice(diesel, petrol, octane){
   if(typeof diesel !== 'number' || typeof petrol !== 'number' || typeof octane !== 'number'){
-    return 'Error: Wrong input! Input must be a number';
+    return 'Error: Wrong input! Input must be a number.';
   }
   else{
     const dieselPrice = 114;
@@ -57,7 +63,9 @@ console.log(oilPrice(diesel, petrol, octane));
 
 
 
-// Problem 4: publicBusFare
+/*======================
+Problem 4: publicBusFare
+======================*/
 
 function publicBusFare(person){
   if(typeof person === 'number'){
@@ -69,21 +77,23 @@ function publicBusFare(person){
     return totalFareOfPublicBus;
   }
   else{
-    return 'Error: Input a valid number';
+    return 'Error: Input a valid number.';
   }
 
 }
 
-const person = 62;
+const person = 365;
 console.log(publicBusFare(person));
 
 
 
-// Problem 5: isBestFriend
+/*=====================
+Problem 5: isBestFriend 
+=====================*/
 
 function isBestFriend(obj1, obj2){
   if(typeof obj1 !== 'object' || typeof obj2 !== 'object' || Array.isArray(obj1) === true || Array.isArray(obj2) === true){
-    return 'Error: Both inputs must be an object type';
+    return 'Error: Both inputs must be an object type.';
   }
   else{
     if(obj1.name === obj2.friend && obj1.friend === obj2.name){
