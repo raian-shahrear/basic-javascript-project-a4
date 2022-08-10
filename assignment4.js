@@ -7,12 +7,12 @@ function radianToDegree(radian){
     return resultInDegree;
   }
   else{
-    return [radian, 'Please input a valid number'];
+    return 'Error: Input a valid number';
   }
   
 }
 
-let radian = 199;
+let radian = 10;
 console.log(radianToDegree(radian));
 
 
@@ -25,7 +25,7 @@ function isJavaScriptFile(fileName){
     return doExist;
   }
   else{
-    return [fileName, 'Please, input a valid file name with extension'];
+    return 'Error: Input a valid file name with extension';
   }
 }
 
@@ -38,7 +38,7 @@ console.log(isJavaScriptFile(fileName));
 
 function oilPrice(diesel, petrol, octane){
   if(typeof diesel !== 'number' || typeof petrol !== 'number' || typeof octane !== 'number'){
-    return[diesel, petrol, octane, 'Wrong input! Input must be a number']
+    return 'Error: Wrong input! Input must be a number';
   }
   else{
     const dieselPrice = 114;
@@ -57,7 +57,7 @@ console.log(oilPrice(diesel, petrol, octane));
 
 
 
-// Problem 3: oilPrice
+// Problem 4: publicBusFare
 
 function publicBusFare(person){
   if(typeof person === 'number'){
@@ -65,16 +65,16 @@ function publicBusFare(person){
     const personInMicrobus = 11;
     const fareOfPB = 250;
   
-    const fareOfPublicBus = ((person % personInBus) % personInMicrobus) * fareOfPB;
-    return fareOfPublicBus;
+    const totalFareOfPublicBus = ((person % personInBus) % personInMicrobus) * fareOfPB;
+    return totalFareOfPublicBus;
   }
   else{
-    return [person, 'Please input a valid number'];
+    return 'Error: Input a valid number';
   }
 
 }
 
-const person = 365;
+const person = 62;
 console.log(publicBusFare(person));
 
 
@@ -83,7 +83,7 @@ console.log(publicBusFare(person));
 
 function isBestFriend(obj1, obj2){
   if(typeof obj1 !== 'object' || typeof obj2 !== 'object' || Array.isArray(obj1) === true || Array.isArray(obj2) === true){
-    return [obj1, obj2, 'Both inputs must be an object type'];
+    return 'Error: Both inputs must be an object type';
   }
   else{
     if(obj1.name === obj2.friend && obj1.friend === obj2.name){
